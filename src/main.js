@@ -1,4 +1,12 @@
 import './style.css';
 
-// Add interactivity if needed
+document.addEventListener('DOMContentLoaded', () => {
+  const startButton = document.querySelector('.cta-button');
+  if (startButton) {
+    startButton.addEventListener('click', () => {
+      window.location.href = '/login.html';
+    });
+  }
+});
+
 console.log('Banca Móvil initialized');
