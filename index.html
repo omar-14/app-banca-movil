@@ -9,10 +9,13 @@
   </head>
   <body>
     <header>
+      <button class="navbar-home-icon">
+        <a href="/index.html"><i class="fas fa-home"></i></a>
+      </button>
       <h1>Banca Móvil</h1>
       <nav>
         <ul>
-          <li><a href="#home">Inicio</a></li>
+          <li><a href="#features">Características</a></li>
           <li><a href="#accounts">Cuentas</a></li>
           <li><a href="#transfers">Transferencias</a></li>
           <li><a href="#profile">Perfil</a></li>
@@ -20,29 +23,77 @@
       </nav>
     </header>
     <main>
-      <section id="home" class="hero">
+      <section id="hero" class="hero">
         <h2>Bienvenido a Banca Móvil</h2>
-        <p>Accede a tus cuentas y realiza operaciones de manera rápida y segura.</p>
-        <button class="cta-button">Comenzar</button>
+        <p>La forma más rápida y segura de gestionar tus finanzas.</p>
+        <div class="center-button">
+          <a href="/login.html" class="cta-button">Acceder</a>
+        </div>
       </section>
       <section id="accounts" class="card-grid">
-        <div class="card">
+        <a href="/accounts.html" class="card">
           <h3>Cuentas</h3>
           <p>Consulta el estado de tus cuentas y movimientos recientes.</p>
-        </div>
-        <div class="card">
+        </a>
+        <a href="/transfers.html" class="card">
           <h3>Transferencias</h3>
           <p>Realiza transferencias a cuentas propias o de terceros.</p>
-        </div>
-        <div class="card">
+        </a>
+        <a href="/profile.html" class="card">
           <h3>Perfil</h3>
           <p>Administra tu información personal y preferencias.</p>
+        </a>
+      </section>
+      <section id="features" class="features">
+        <h2>Nuestras Características</h2>
+        <div class="card-grid">
+          <div class="card feature-card animate-fade-in">
+            <i class="fas fa-mobile-alt fa-3x"></i>
+            <h3>Acceso Móvil</h3>
+            <p>Gestiona tus cuentas desde cualquier lugar con nuestra app móvil.</p>
+          </div>
+          <div class="card feature-card animate-fade-in">
+            <i class="fas fa-shield-alt fa-3x"></i>
+            <h3>Seguridad</h3>
+            <p>Tu información está protegida con las mejores medidas de seguridad.</p>
+          </div>
+          <div class="card feature-card animate-fade-in">
+            <i class="fas fa-exchange-alt fa-3x"></i>
+            <h3>Transferencias</h3>
+            <p>Envía dinero a cuentas propias o de terceros de manera rápida.</p>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="card-grid">
+          <div class="card testimonial-card animate-slide-up">
+            <p>"Banca Móvil me ha facilitado la vida. Ahora puedo gestionar mis finanzas desde cualquier lugar."</p>
+            <h4>- Juan Pérez</h4>
+          </div>
+          <div class="card testimonial-card animate-slide-up">
+            <p>"La seguridad y rapidez de las transferencias son inigualables. ¡Recomendado!"</p>
+            <h4>- María López</h4>
+          </div>
+          <div class="card testimonial-card animate-slide-up">
+            <p>"Con Banca Móvil, tengo el control total de mis cuentas. Es increíblemente fácil de usar."</p>
+            <h4>- Carlos García</h4>
+          </div>
+        </div>
+      </section>
+      <section id="cta" class="cta">
+        <h2>Únete a Banca Móvil Hoy</h2>
+        <p>Regístrate y comienza a disfrutar de todos los beneficios que ofrecemos.</p>
+        <div class="center-button">
+          <a href="/login.html" class="cta-button">Comenzar</a>
         </div>
       </section>
     </main>
     <footer>
       <p>&copy; 2023 Banca Móvil. Todos los derechos reservados.</p>
+      <p>&copy; Autor: Omar Ramos Herrera</p>
     </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
